@@ -1,4 +1,4 @@
-import * as area from './calcArea.class.mjs';,,
+import * as area from './calcArea.class.mjs';
 import Book from './book.mjs';
 
 console.log(area.circleArea(2));
