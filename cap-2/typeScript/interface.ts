@@ -1,3 +1,5 @@
+// @ts-check
+
 //  interface é uma descrição dos atributos
 
 interface Person {
