@@ -16,13 +16,13 @@ printName(mary)
 
 // interface relacionada a POO
 
-interface Comparacao {
-    compareTo(b): number;
+interface Comparacao<T> {
+    compareTo(b: T): number;
 }
 
-class MyObject implements Comparacao {
+class MyObject implements Comparacao<MyObject> {
     age: number;
-    compareTo(b): number {
+    compareTo(b: MyObject): number {
         if (this.age === b.age) {
             return 0;
         }
