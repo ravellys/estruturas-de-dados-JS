@@ -61,4 +61,5 @@ if (require.main === module){
     console.log(pilha.items) // {}
     console.log(pilha.peek()) // undefined
 }
+
 module.exports = Stack;
