@@ -25,17 +25,19 @@ class Stack {
     }
 }
 
-let pilha = new Stack();
-console.log(pilha.items) // []
-pilha.push(1)
-pilha.push(2)
-pilha.push(3)
-console.log(pilha.items) // [1, 2, 3]
-pilha.pop()
-console.log(pilha.items) // [1, 2]
-console.log(pilha.peek()) // 2
-console.log(pilha.size()) // 2
-pilha.clear()
-console.log(pilha.items) // []
+if (require.main === module){
+    let pilha = new Stack();
+    console.log(pilha.items) // []
+    pilha.push(1)
+    pilha.push(2)
+    pilha.push(3)
+    console.log(pilha.items) // [1, 2, 3]
+    pilha.pop()
+    console.log(pilha.items) // [1, 2]
+    console.log(pilha.peek()) // 2
+    console.log(pilha.size()) // 2
+    pilha.clear()
+    console.log(pilha.items) // []
+}
 
-
+module.exports = Stack;
