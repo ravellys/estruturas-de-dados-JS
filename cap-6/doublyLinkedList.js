@@ -64,7 +64,7 @@ class DoublyLinkedList extends LinkedList {
                 current.next.prev = previous; 
             }
             this.count --
-            return current
+            return current.element
         }
 
         return undefined;
@@ -72,3 +72,5 @@ class DoublyLinkedList extends LinkedList {
 
 
 }
+
+module.exports = DoublyLinkedList
