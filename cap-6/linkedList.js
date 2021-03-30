@@ -95,7 +95,7 @@ class LinkedList {
     }
 
     getHead(){
-        return this.head()
+        return this.head;
     }
 
     toString () {
